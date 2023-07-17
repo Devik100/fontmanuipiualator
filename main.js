@@ -52,5 +52,17 @@ function draw() {
     if (py-5 < y) {
         x=py-5
     }
+    if (x<0) {
+        x=0
+    }
+    if (y<0) {
+        y=0
+    }
+    if (x>600) {
+        x=600
+    }
+    if (y>600) {
+        y=600
+    }
     text("filler text", x+(rx/2)-550, y)
 }
